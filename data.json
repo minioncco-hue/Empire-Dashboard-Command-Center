@@ -1,23 +1,23 @@
 {
   "botName": "OpenClaw Dashboard",
   "botEmoji": "\ud83e\udd9e",
-  "lastRefresh": "2026-02-18 21:40:36 GMT+8",
-  "lastRefreshMs": 1771422036588,
+  "lastRefresh": "2026-02-18 21:51:44 GMT+8",
+  "lastRefreshMs": 1771422704077,
   "gateway": {
     "status": "online",
     "pid": 88282,
-    "uptime": "04:45:58",
-    "memory": "306 MB",
-    "rss": 313216
+    "uptime": "04:57:06",
+    "memory": "195 MB",
+    "rss": 199840
   },
   "compactionMode": "safeguard",
-  "totalCostToday": 104.81,
-  "totalCostAllTime": 1389.76,
-  "projectedMonthly": 3144.36,
+  "totalCostToday": 110.99,
+  "totalCostAllTime": 1395.94,
+  "projectedMonthly": 3329.73,
   "costBreakdown": [
     {
       "model": "Claude Opus 4.6",
-      "cost": 806.41
+      "cost": 806.72
     },
     {
       "model": "Claude Opus 4.5",
@@ -25,11 +25,11 @@
     },
     {
       "model": "Claude Sonnet",
-      "cost": 64.82
+      "cost": 70.67
     },
     {
       "model": "GPT-5.3 Codex",
-      "cost": 24.36
+      "cost": 24.37
     },
     {
       "model": "Grok 4 Fast",
@@ -71,15 +71,15 @@
   "costBreakdownToday": [
     {
       "model": "Claude Sonnet",
-      "cost": 64.82
+      "cost": 70.67
     },
     {
       "model": "Claude Opus 4.6",
-      "cost": 22.64
+      "cost": 22.96
     },
     {
       "model": "GPT-5.3 Codex",
-      "cost": 17.23
+      "cost": 17.25
     },
     {
       "model": "Grok 4 Fast",
@@ -100,15 +100,90 @@
       "key": "agent:work:telegram:group:-1003877951698",
       "agent": "work",
       "model": "claude-sonnet-4-6",
-      "contextPct": 63.4,
-      "lastActivity": "21:39:55",
-      "updatedAt": 1771421995025,
-      "totalTokens": 126812,
+      "contextPct": 77.0,
+      "lastActivity": "21:51:39",
+      "updatedAt": 1771422699822,
+      "totalTokens": 154066,
       "type": "group",
       "spawnedBy": "",
       "active": true,
       "label": "",
       "subject": "OpenClaw Dev & Admin"
+    },
+    {
+      "name": "pre-release-validation-v2.6.0",
+      "key": "agent:work:subagent:d32d1115-e2a3-421a-a7f7-68d879b1353a",
+      "agent": "work",
+      "model": "unknown",
+      "contextPct": 0,
+      "lastActivity": "21:51:36",
+      "updatedAt": 1771422696748,
+      "totalTokens": 0,
+      "type": "subagent",
+      "spawnedBy": "agent:work:telegram:group:-1003877951698",
+      "active": true,
+      "label": "pre-release-validation-v2.6.0",
+      "subject": "pre-release-validation-v2.6.0"
+    },
+    {
+      "name": "research-orchestrator",
+      "key": "agent:work:subagent:ccf8f1de-ab41-4a60-970c-b24382c8c99d",
+      "agent": "work",
+      "model": "claude-opus-4-6",
+      "contextPct": 6.4,
+      "lastActivity": "21:45:12",
+      "updatedAt": 1771422312342,
+      "totalTokens": 12825,
+      "type": "subagent",
+      "spawnedBy": "agent:work:telegram:group:-1003877951698",
+      "active": true,
+      "label": "research-orchestrator",
+      "subject": "research-orchestrator"
+    },
+    {
+      "name": "dev-orchestrator",
+      "key": "agent:work:subagent:dd7afc61-5a49-4162-a6e1-648af55bcd17",
+      "agent": "work",
+      "model": "claude-opus-4-6",
+      "contextPct": 6.1,
+      "lastActivity": "21:45:09",
+      "updatedAt": 1771422309637,
+      "totalTokens": 12151,
+      "type": "subagent",
+      "spawnedBy": "agent:work:telegram:group:-1003877951698",
+      "active": true,
+      "label": "dev-orchestrator",
+      "subject": "dev-orchestrator"
+    },
+    {
+      "name": "research-worker-analyst",
+      "key": "agent:work:subagent:0d0d9692-cce0-49f5-9b91-72085a8e8883",
+      "agent": "work",
+      "model": "claude-opus-4-6",
+      "contextPct": 6.0,
+      "lastActivity": "21:45:08",
+      "updatedAt": 1771422308905,
+      "totalTokens": 12065,
+      "type": "subagent",
+      "spawnedBy": "agent:work:subagent:ccf8f1de-ab41-4a60-970c-b24382c8c99d",
+      "active": true,
+      "label": "research-worker-analyst",
+      "subject": "research-worker-analyst"
+    },
+    {
+      "name": "dev-worker-codex",
+      "key": "agent:work:subagent:70090605-abf3-4a91-872e-d176af8930ee",
+      "agent": "work",
+      "model": "claude-opus-4-6",
+      "contextPct": 5.9,
+      "lastActivity": "21:43:42",
+      "updatedAt": 1771422222990,
+      "totalTokens": 11801,
+      "type": "subagent",
+      "spawnedBy": "agent:work:subagent:dd7afc61-5a49-4162-a6e1-648af55bcd17",
+      "active": true,
+      "label": "dev-worker-codex",
+      "subject": "dev-worker-codex"
     },
     {
       "name": "mudrii MY (@mudriion)",
@@ -154,36 +229,6 @@
       "active": false,
       "label": "dashboard-agent-config-fix",
       "subject": "dashboard-agent-config-fix"
-    },
-    {
-      "name": "test-worker-depth2",
-      "key": "agent:work:subagent:be6539cb-7b43-4d35-b0bb-3503d2f62562",
-      "agent": "work",
-      "model": "claude-opus-4-6",
-      "contextPct": 6.1,
-      "lastActivity": "20:45:57",
-      "updatedAt": 1771418757197,
-      "totalTokens": 12293,
-      "type": "subagent",
-      "spawnedBy": "agent:work:subagent:c57e9699-e824-44de-b140-b5218848d713",
-      "active": false,
-      "label": "test-worker-depth2",
-      "subject": "test-worker-depth2"
-    },
-    {
-      "name": "test-orchestrator-depth1",
-      "key": "agent:work:subagent:c57e9699-e824-44de-b140-b5218848d713",
-      "agent": "work",
-      "model": "claude-opus-4-6",
-      "contextPct": 6.1,
-      "lastActivity": "20:45:56",
-      "updatedAt": 1771418756675,
-      "totalTokens": 12208,
-      "type": "subagent",
-      "spawnedBy": "agent:work:telegram:group:-1003877951698",
-      "active": false,
-      "label": "test-orchestrator-depth1",
-      "subject": "test-orchestrator-depth1"
     },
     {
       "name": "Contractor remedy work palma",
@@ -276,7 +321,7 @@
       "subject": "Cron: Daily Memory Curation"
     }
   ],
-  "sessionCount": 29,
+  "sessionCount": 32,
   "crons": [
     {
       "name": "Morning Briefing",
@@ -331,6 +376,51 @@
   ],
   "subagentRuns": [
     {
+      "task": "agent:work:subagent:d32d1115-e2a3-421a-a7f7-68d879b1353a",
+      "model": "GPT-5.3 Codex",
+      "cost": 0.0157,
+      "durationSec": 0,
+      "status": "completed",
+      "timestamp": "2026-02-18 21:51",
+      "date": "2026-02-18"
+    },
+    {
+      "task": "agent:work:subagent:dd7afc61-5a49-4162-a6e1-648af55bcd17",
+      "model": "Claude Opus 4.6",
+      "cost": 0.0878,
+      "durationSec": 105,
+      "status": "completed",
+      "timestamp": "2026-02-18 21:45",
+      "date": "2026-02-18"
+    },
+    {
+      "task": "agent:work:subagent:ccf8f1de-ab41-4a60-970c-b24382c8c99d",
+      "model": "Claude Opus 4.6",
+      "cost": 0.1061,
+      "durationSec": 106,
+      "status": "completed",
+      "timestamp": "2026-02-18 21:45",
+      "date": "2026-02-18"
+    },
+    {
+      "task": "agent:work:subagent:0d0d9692-cce0-49f5-9b91-72085a8e8883",
+      "model": "Claude Opus 4.6",
+      "cost": 0.0683,
+      "durationSec": 97,
+      "status": "completed",
+      "timestamp": "2026-02-18 21:45",
+      "date": "2026-02-18"
+    },
+    {
+      "task": "agent:work:subagent:70090605-abf3-4a91-872e-d176af8930ee",
+      "model": "Claude Opus 4.6",
+      "cost": 0.0526,
+      "durationSec": 4,
+      "status": "completed",
+      "timestamp": "2026-02-18 21:43",
+      "date": "2026-02-18"
+    },
+    {
       "task": "agent:work:subagent:6a1ec54d-55f0-4b2d-b1b0-4b28192528ed",
       "model": "Claude Opus 4.6",
       "cost": 0.4909,
@@ -340,7 +430,7 @@
       "date": "2026-02-18"
     },
     {
-      "task": "agent:work:subagent:be6539cb-7b43-4d35-b0bb-3503d2f62562",
+      "task": "cbd5fa87-816",
       "model": "Claude Opus 4.6",
       "cost": 0.0969,
       "durationSec": 36,
@@ -349,7 +439,7 @@
       "date": "2026-02-18"
     },
     {
-      "task": "agent:work:subagent:c57e9699-e824-44de-b140-b5218848d713",
+      "task": "f962a01e-e70",
       "model": "Claude Opus 4.6",
       "cost": 0.1208,
       "durationSec": 47,
@@ -554,54 +644,54 @@
       "status": "completed",
       "timestamp": "2026-02-18 13:05",
       "date": "2026-02-18"
-    },
-    {
-      "task": "36efe25f-ca9",
-      "model": "Claude Opus 4.6",
-      "cost": 0.0828,
-      "durationSec": 0,
-      "status": "completed",
-      "timestamp": "2026-02-18 04:22",
-      "date": "2026-02-18"
-    },
-    {
-      "task": "08dfe545-8bd",
-      "model": "Grok 4 Fast",
-      "cost": 0.1832,
-      "durationSec": 62252,
-      "status": "completed",
-      "timestamp": "2026-02-17 22:12",
-      "date": "2026-02-17"
-    },
-    {
-      "task": "8a977d60-73d",
-      "model": "GPT-5.3 Codex",
-      "cost": 0.0378,
-      "durationSec": 14,
-      "status": "completed",
-      "timestamp": "2026-02-17 20:13",
-      "date": "2026-02-17"
-    },
-    {
-      "task": "944befd1-20c",
-      "model": "GPT-5.3 Codex",
-      "cost": 0.0653,
-      "durationSec": 42,
-      "status": "completed",
-      "timestamp": "2026-02-17 19:51",
-      "date": "2026-02-17"
-    },
-    {
-      "task": "d292f90e-66f",
-      "model": "GPT-5.3 Codex",
-      "cost": 0.0499,
-      "durationSec": 25,
-      "status": "completed",
-      "timestamp": "2026-02-17 18:35",
-      "date": "2026-02-17"
     }
   ],
   "subagentRunsToday": [
+    {
+      "task": "agent:work:subagent:d32d1115-e2a3-421a-a7f7-68d879b1353a",
+      "model": "GPT-5.3 Codex",
+      "cost": 0.0157,
+      "durationSec": 0,
+      "status": "completed",
+      "timestamp": "2026-02-18 21:51",
+      "date": "2026-02-18"
+    },
+    {
+      "task": "agent:work:subagent:dd7afc61-5a49-4162-a6e1-648af55bcd17",
+      "model": "Claude Opus 4.6",
+      "cost": 0.0878,
+      "durationSec": 105,
+      "status": "completed",
+      "timestamp": "2026-02-18 21:45",
+      "date": "2026-02-18"
+    },
+    {
+      "task": "agent:work:subagent:ccf8f1de-ab41-4a60-970c-b24382c8c99d",
+      "model": "Claude Opus 4.6",
+      "cost": 0.1061,
+      "durationSec": 106,
+      "status": "completed",
+      "timestamp": "2026-02-18 21:45",
+      "date": "2026-02-18"
+    },
+    {
+      "task": "agent:work:subagent:0d0d9692-cce0-49f5-9b91-72085a8e8883",
+      "model": "Claude Opus 4.6",
+      "cost": 0.0683,
+      "durationSec": 97,
+      "status": "completed",
+      "timestamp": "2026-02-18 21:45",
+      "date": "2026-02-18"
+    },
+    {
+      "task": "agent:work:subagent:70090605-abf3-4a91-872e-d176af8930ee",
+      "model": "Claude Opus 4.6",
+      "cost": 0.0526,
+      "durationSec": 4,
+      "status": "completed",
+      "timestamp": "2026-02-18 21:43",
+      "date": "2026-02-18"
+    },
     {
       "task": "agent:work:subagent:6a1ec54d-55f0-4b2d-b1b0-4b28192528ed",
       "model": "Claude Opus 4.6",
@@ -612,7 +702,7 @@
       "date": "2026-02-18"
     },
     {
-      "task": "agent:work:subagent:be6539cb-7b43-4d35-b0bb-3503d2f62562",
+      "task": "cbd5fa87-816",
       "model": "Claude Opus 4.6",
       "cost": 0.0969,
       "durationSec": 36,
@@ -621,7 +711,7 @@
       "date": "2026-02-18"
     },
     {
-      "task": "agent:work:subagent:c57e9699-e824-44de-b140-b5218848d713",
+      "task": "f962a01e-e70",
       "model": "Claude Opus 4.6",
       "cost": 0.1208,
       "durationSec": 47,
@@ -736,54 +826,54 @@
       "status": "completed",
       "timestamp": "2026-02-18 15:19",
       "date": "2026-02-18"
-    },
-    {
-      "task": "62049116-2a6",
-      "model": "GPT-5.3 Codex",
-      "cost": 0.0723,
-      "durationSec": 52,
-      "status": "completed",
-      "timestamp": "2026-02-18 15:00",
-      "date": "2026-02-18"
-    },
-    {
-      "task": "28203197-5db",
-      "model": "GPT-5.3 Codex",
-      "cost": 0.3144,
-      "durationSec": 221,
-      "status": "completed",
-      "timestamp": "2026-02-18 14:34",
-      "date": "2026-02-18"
-    },
-    {
-      "task": "c5124c27-5f6",
-      "model": "GPT-5.3 Codex",
-      "cost": 0.0723,
-      "durationSec": 128,
-      "status": "completed",
-      "timestamp": "2026-02-18 14:32",
-      "date": "2026-02-18"
-    },
-    {
-      "task": "dd93819c-bda",
-      "model": "GPT-5.3 Codex",
-      "cost": 0.0757,
-      "durationSec": 148,
-      "status": "completed",
-      "timestamp": "2026-02-18 14:32",
-      "date": "2026-02-18"
-    },
-    {
-      "task": "d3eca14c-650",
-      "model": "GPT-5.3 Codex",
-      "cost": 0.1363,
-      "durationSec": 139,
-      "status": "completed",
-      "timestamp": "2026-02-18 14:32",
-      "date": "2026-02-18"
     }
   ],
   "subagentRuns7d": [
+    {
+      "task": "agent:work:subagent:d32d1115-e2a3-421a-a7f7-68d879b1353a",
+      "model": "GPT-5.3 Codex",
+      "cost": 0.0157,
+      "durationSec": 0,
+      "status": "completed",
+      "timestamp": "2026-02-18 21:51",
+      "date": "2026-02-18"
+    },
+    {
+      "task": "agent:work:subagent:dd7afc61-5a49-4162-a6e1-648af55bcd17",
+      "model": "Claude Opus 4.6",
+      "cost": 0.0878,
+      "durationSec": 105,
+      "status": "completed",
+      "timestamp": "2026-02-18 21:45",
+      "date": "2026-02-18"
+    },
+    {
+      "task": "agent:work:subagent:ccf8f1de-ab41-4a60-970c-b24382c8c99d",
+      "model": "Claude Opus 4.6",
+      "cost": 0.1061,
+      "durationSec": 106,
+      "status": "completed",
+      "timestamp": "2026-02-18 21:45",
+      "date": "2026-02-18"
+    },
+    {
+      "task": "agent:work:subagent:0d0d9692-cce0-49f5-9b91-72085a8e8883",
+      "model": "Claude Opus 4.6",
+      "cost": 0.0683,
+      "durationSec": 97,
+      "status": "completed",
+      "timestamp": "2026-02-18 21:45",
+      "date": "2026-02-18"
+    },
+    {
+      "task": "agent:work:subagent:70090605-abf3-4a91-872e-d176af8930ee",
+      "model": "Claude Opus 4.6",
+      "cost": 0.0526,
+      "durationSec": 4,
+      "status": "completed",
+      "timestamp": "2026-02-18 21:43",
+      "date": "2026-02-18"
+    },
     {
       "task": "agent:work:subagent:6a1ec54d-55f0-4b2d-b1b0-4b28192528ed",
       "model": "Claude Opus 4.6",
@@ -794,7 +884,7 @@
       "date": "2026-02-18"
     },
     {
-      "task": "agent:work:subagent:be6539cb-7b43-4d35-b0bb-3503d2f62562",
+      "task": "cbd5fa87-816",
       "model": "Claude Opus 4.6",
       "cost": 0.0969,
       "durationSec": 36,
@@ -803,7 +893,7 @@
       "date": "2026-02-18"
     },
     {
-      "task": "agent:work:subagent:c57e9699-e824-44de-b140-b5218848d713",
+      "task": "f962a01e-e70",
       "model": "Claude Opus 4.6",
       "cost": 0.1208,
       "durationSec": 47,
@@ -1188,54 +1278,54 @@
       "status": "completed",
       "timestamp": "2026-02-17 13:50",
       "date": "2026-02-17"
-    },
-    {
-      "task": "0d40abea-775",
-      "model": "Grok 4 Fast",
-      "cost": 0.0059,
-      "durationSec": 15,
-      "status": "completed",
-      "timestamp": "2026-02-17 12:45",
-      "date": "2026-02-17"
-    },
-    {
-      "task": "1256fc96-188",
-      "model": "Claude Opus 4.6",
-      "cost": 0.2456,
-      "durationSec": 417,
-      "status": "completed",
-      "timestamp": "2026-02-17 11:07",
-      "date": "2026-02-17"
-    },
-    {
-      "task": "dec2bb2c-584",
-      "model": "Grok 4 Fast",
-      "cost": 0.4443,
-      "durationSec": 82612,
-      "status": "completed",
-      "timestamp": "2026-02-17 03:55",
-      "date": "2026-02-17"
-    },
-    {
-      "task": "67062cd1-fd3",
-      "model": "Claude Opus 4.6",
-      "cost": 0.3104,
-      "durationSec": 66,
-      "status": "completed",
-      "timestamp": "2026-02-16 23:01",
-      "date": "2026-02-16"
-    },
-    {
-      "task": "0bd14c9a-732",
-      "model": "Claude Opus 4.6",
-      "cost": 0.2087,
-      "durationSec": 36,
-      "status": "completed",
-      "timestamp": "2026-02-16 18:12",
-      "date": "2026-02-16"
     }
   ],
   "subagentRuns30d": [
+    {
+      "task": "agent:work:subagent:d32d1115-e2a3-421a-a7f7-68d879b1353a",
+      "model": "GPT-5.3 Codex",
+      "cost": 0.0157,
+      "durationSec": 0,
+      "status": "completed",
+      "timestamp": "2026-02-18 21:51",
+      "date": "2026-02-18"
+    },
+    {
+      "task": "agent:work:subagent:dd7afc61-5a49-4162-a6e1-648af55bcd17",
+      "model": "Claude Opus 4.6",
+      "cost": 0.0878,
+      "durationSec": 105,
+      "status": "completed",
+      "timestamp": "2026-02-18 21:45",
+      "date": "2026-02-18"
+    },
+    {
+      "task": "agent:work:subagent:ccf8f1de-ab41-4a60-970c-b24382c8c99d",
+      "model": "Claude Opus 4.6",
+      "cost": 0.1061,
+      "durationSec": 106,
+      "status": "completed",
+      "timestamp": "2026-02-18 21:45",
+      "date": "2026-02-18"
+    },
+    {
+      "task": "agent:work:subagent:0d0d9692-cce0-49f5-9b91-72085a8e8883",
+      "model": "Claude Opus 4.6",
+      "cost": 0.0683,
+      "durationSec": 97,
+      "status": "completed",
+      "timestamp": "2026-02-18 21:45",
+      "date": "2026-02-18"
+    },
+    {
+      "task": "agent:work:subagent:70090605-abf3-4a91-872e-d176af8930ee",
+      "model": "Claude Opus 4.6",
+      "cost": 0.0526,
+      "durationSec": 4,
+      "status": "completed",
+      "timestamp": "2026-02-18 21:43",
+      "date": "2026-02-18"
+    },
     {
       "task": "agent:work:subagent:6a1ec54d-55f0-4b2d-b1b0-4b28192528ed",
       "model": "Claude Opus 4.6",
@@ -1246,7 +1336,7 @@
       "date": "2026-02-18"
     },
     {
-      "task": "agent:work:subagent:be6539cb-7b43-4d35-b0bb-3503d2f62562",
+      "task": "cbd5fa87-816",
       "model": "Claude Opus 4.6",
       "cost": 0.0969,
       "durationSec": 36,
@@ -1255,7 +1345,7 @@
       "date": "2026-02-18"
     },
     {
-      "task": "agent:work:subagent:c57e9699-e824-44de-b140-b5218848d713",
+      "task": "f962a01e-e70",
       "model": "Claude Opus 4.6",
       "cost": 0.1208,
       "durationSec": 47,
@@ -2090,70 +2180,25 @@
       "status": "completed",
       "timestamp": "2026-02-15 23:51",
       "date": "2026-02-15"
-    },
-    {
-      "task": "224cac0d-bbd",
-      "model": "Claude Opus 4.6",
-      "cost": 0.7126,
-      "durationSec": 177,
-      "status": "completed",
-      "timestamp": "2026-02-15 23:51",
-      "date": "2026-02-15"
-    },
-    {
-      "task": "f80029bd-694",
-      "model": "Claude Opus 4.6",
-      "cost": 0.2216,
-      "durationSec": 24,
-      "status": "completed",
-      "timestamp": "2026-02-15 23:00",
-      "date": "2026-02-15"
-    },
-    {
-      "task": "4ed6abaa-122",
-      "model": "Claude Opus 4.6",
-      "cost": 0.2138,
-      "durationSec": 372,
-      "status": "completed",
-      "timestamp": "2026-02-15 15:40",
-      "date": "2026-02-15"
-    },
-    {
-      "task": "a669c409-e15",
-      "model": "MiniMax M2.5",
-      "cost": 0.0828,
-      "durationSec": 154,
-      "status": "completed",
-      "timestamp": "2026-02-15 15:34",
-      "date": "2026-02-15"
-    },
-    {
-      "task": "c2784cf4-6d6",
-      "model": "GPT-5.3 Codex",
-      "cost": 0.324,
-      "durationSec": 101,
-      "status": "completed",
-      "timestamp": "2026-02-15 15:33",
-      "date": "2026-02-15"
     }
   ],
-  "subagentCostAllTime": 1135.63,
-  "subagentCostToday": 61.52,
-  "subagentCost7d": 431.82,
-  "subagentCost30d": 1135.63,
+  "subagentCostAllTime": 1135.96,
+  "subagentCostToday": 61.85,
+  "subagentCost7d": 432.15,
+  "subagentCost30d": 1135.96,
   "tokenUsage": [
     {
       "model": "Claude Opus 4.6",
-      "calls": 7792,
+      "calls": 7807,
       "input": "11.2K",
       "output": "1.9M",
-      "cacheRead": "635.2M",
-      "totalTokens": "712.3M",
-      "cost": 806.41,
-      "inputRaw": 11190,
-      "outputRaw": 1923350,
-      "cacheReadRaw": 635177790,
-      "totalTokensRaw": 712250701
+      "cacheRead": "635.3M",
+      "totalTokens": "712.4M",
+      "cost": 806.72,
+      "inputRaw": 11217,
+      "outputRaw": 1925186,
+      "cacheReadRaw": 635327099,
+      "totalTokensRaw": 712432920
     },
     {
       "model": "Claude Opus 4.5",
@@ -2170,29 +2215,29 @@
     },
     {
       "model": "Claude Sonnet",
-      "calls": 377,
-      "input": "547",
-      "output": "130.7K",
-      "cacheRead": "33.4M",
-      "totalTokens": "47.6M",
-      "cost": 64.82,
-      "inputRaw": 547,
-      "outputRaw": 130690,
-      "cacheReadRaw": 33396332,
-      "totalTokensRaw": 47618747
+      "calls": 434,
+      "input": "620",
+      "output": "144.4K",
+      "cacheRead": "40.6M",
+      "totalTokens": "55.8M",
+      "cost": 70.67,
+      "inputRaw": 620,
+      "outputRaw": 144438,
+      "cacheReadRaw": 40632041,
+      "totalTokensRaw": 55794040
     },
     {
       "model": "GPT-5.3 Codex",
-      "calls": 740,
+      "calls": 741,
       "input": "9.4M",
-      "output": "167.0K",
+      "output": "167.2K",
       "cacheRead": "31.4M",
       "totalTokens": "41.0M",
-      "cost": 24.36,
-      "inputRaw": 9438838,
-      "outputRaw": 167039,
-      "cacheReadRaw": 31428992,
-      "totalTokensRaw": 41034869
+      "cost": 24.37,
+      "inputRaw": 9446267,
+      "outputRaw": 167213,
+      "cacheReadRaw": 31430528,
+      "totalTokensRaw": 41044008
     },
     {
       "model": "Grok 4 Fast",
@@ -2341,42 +2386,42 @@
   "tokenUsageToday": [
     {
       "model": "Claude Sonnet",
-      "calls": 377,
-      "input": "547",
-      "output": "130.7K",
-      "cacheRead": "33.4M",
-      "totalTokens": "47.6M",
-      "cost": 64.82,
-      "inputRaw": 547,
-      "outputRaw": 130690,
-      "cacheReadRaw": 33396332,
-      "totalTokensRaw": 47618747
+      "calls": 434,
+      "input": "620",
+      "output": "144.4K",
+      "cacheRead": "40.6M",
+      "totalTokens": "55.8M",
+      "cost": 70.67,
+      "inputRaw": 620,
+      "outputRaw": 144438,
+      "cacheReadRaw": 40632041,
+      "totalTokensRaw": 55794040
     },
     {
       "model": "Claude Opus 4.6",
-      "calls": 172,
-      "input": "252",
-      "output": "37.9K",
-      "cacheRead": "7.1M",
-      "totalTokens": "10.0M",
-      "cost": 22.64,
-      "inputRaw": 252,
-      "outputRaw": 37884,
-      "cacheReadRaw": 7052251,
-      "totalTokensRaw": 9997537
+      "calls": 187,
+      "input": "279",
+      "output": "39.7K",
+      "cacheRead": "7.2M",
+      "totalTokens": "10.2M",
+      "cost": 22.96,
+      "inputRaw": 279,
+      "outputRaw": 39720,
+      "cacheReadRaw": 7201560,
+      "totalTokensRaw": 10179756
     },
     {
       "model": "GPT-5.3 Codex",
-      "calls": 307,
+      "calls": 308,
       "input": "7.8M",
-      "output": "67.7K",
+      "output": "67.9K",
       "cacheRead": "14.9M",
       "totalTokens": "22.8M",
-      "cost": 17.23,
-      "inputRaw": 7812585,
-      "outputRaw": 67713,
-      "cacheReadRaw": 14933760,
-      "totalTokensRaw": 22814058
+      "cost": 17.25,
+      "inputRaw": 7820014,
+      "outputRaw": 67887,
+      "cacheReadRaw": 14935296,
+      "totalTokensRaw": 22823197
     },
     {
       "model": "Grok 4 Fast",
@@ -2434,42 +2479,42 @@
   "tokenUsage7d": [
     {
       "model": "Claude Opus 4.6",
-      "calls": 5000,
-      "input": "7.0K",
+      "calls": 5015,
+      "input": "7.1K",
       "output": "1.2M",
-      "cacheRead": "396.2M",
-      "totalTokens": "450.9M",
-      "cost": 562.96,
-      "inputRaw": 7030,
-      "outputRaw": 1217585,
-      "cacheReadRaw": 396199264,
-      "totalTokensRaw": 450924878
+      "cacheRead": "396.3M",
+      "totalTokens": "451.1M",
+      "cost": 563.27,
+      "inputRaw": 7057,
+      "outputRaw": 1219421,
+      "cacheReadRaw": 396348573,
+      "totalTokensRaw": 451107097
     },
     {
       "model": "Claude Sonnet",
-      "calls": 377,
-      "input": "547",
-      "output": "130.7K",
-      "cacheRead": "33.4M",
-      "totalTokens": "47.6M",
-      "cost": 64.82,
-      "inputRaw": 547,
-      "outputRaw": 130690,
-      "cacheReadRaw": 33396332,
-      "totalTokensRaw": 47618747
+      "calls": 434,
+      "input": "620",
+      "output": "144.4K",
+      "cacheRead": "40.6M",
+      "totalTokens": "55.8M",
+      "cost": 70.67,
+      "inputRaw": 620,
+      "outputRaw": 144438,
+      "cacheReadRaw": 40632041,
+      "totalTokensRaw": 55794040
     },
     {
       "model": "GPT-5.3 Codex",
-      "calls": 570,
+      "calls": 571,
       "input": "8.9M",
-      "output": "130.6K",
+      "output": "130.8K",
       "cacheRead": "26.8M",
       "totalTokens": "35.8M",
-      "cost": 22.07,
-      "inputRaw": 8885490,
-      "outputRaw": 130641,
-      "cacheReadRaw": 26782592,
-      "totalTokensRaw": 35798723
+      "cost": 22.08,
+      "inputRaw": 8892919,
+      "outputRaw": 130815,
+      "cacheReadRaw": 26784128,
+      "totalTokensRaw": 35807862
     },
     {
       "model": "Grok 4 Fast",
@@ -2579,16 +2624,16 @@
   "tokenUsage30d": [
     {
       "model": "Claude Opus 4.6",
-      "calls": 7792,
+      "calls": 7807,
       "input": "11.2K",
       "output": "1.9M",
-      "cacheRead": "635.2M",
-      "totalTokens": "712.3M",
-      "cost": 806.41,
-      "inputRaw": 11190,
-      "outputRaw": 1923350,
-      "cacheReadRaw": 635177790,
-      "totalTokensRaw": 712250701
+      "cacheRead": "635.3M",
+      "totalTokens": "712.4M",
+      "cost": 806.72,
+      "inputRaw": 11217,
+      "outputRaw": 1925186,
+      "cacheReadRaw": 635327099,
+      "totalTokensRaw": 712432920
     },
     {
       "model": "Claude Opus 4.5",
@@ -2605,29 +2650,29 @@
     },
     {
       "model": "Claude Sonnet",
-      "calls": 377,
-      "input": "547",
-      "output": "130.7K",
-      "cacheRead": "33.4M",
-      "totalTokens": "47.6M",
-      "cost": 64.82,
-      "inputRaw": 547,
-      "outputRaw": 130690,
-      "cacheReadRaw": 33396332,
-      "totalTokensRaw": 47618747
+      "calls": 434,
+      "input": "620",
+      "output": "144.4K",
+      "cacheRead": "40.6M",
+      "totalTokens": "55.8M",
+      "cost": 70.67,
+      "inputRaw": 620,
+      "outputRaw": 144438,
+      "cacheReadRaw": 40632041,
+      "totalTokensRaw": 55794040
     },
     {
       "model": "GPT-5.3 Codex",
-      "calls": 740,
+      "calls": 741,
       "input": "9.4M",
-      "output": "167.0K",
+      "output": "167.2K",
       "cacheRead": "31.4M",
       "totalTokens": "41.0M",
-      "cost": 24.36,
-      "inputRaw": 9438838,
-      "outputRaw": 167039,
-      "cacheReadRaw": 31428992,
-      "totalTokensRaw": 41034869
+      "cost": 24.37,
+      "inputRaw": 9446267,
+      "outputRaw": 167213,
+      "cacheReadRaw": 31430528,
+      "totalTokensRaw": 41044008
     },
     {
       "model": "Grok 4 Fast",
@@ -2776,16 +2821,16 @@
   "subagentUsage": [
     {
       "model": "Claude Opus 4.6",
-      "calls": 6042,
-      "input": "8.4K",
+      "calls": 6057,
+      "input": "8.5K",
       "output": "1.6M",
-      "cacheRead": "488.6M",
-      "totalTokens": "543.0M",
-      "cost": 584.9,
-      "inputRaw": 8438,
-      "outputRaw": 1604675,
-      "cacheReadRaw": 488645903,
-      "totalTokensRaw": 542955876
+      "cacheRead": "488.8M",
+      "totalTokens": "543.1M",
+      "cost": 585.21,
+      "inputRaw": 8465,
+      "outputRaw": 1606511,
+      "cacheReadRaw": 488795212,
+      "totalTokensRaw": 543138095
     },
     {
       "model": "Claude Opus 4.5",
@@ -2815,16 +2860,16 @@
     },
     {
       "model": "GPT-5.3 Codex",
-      "calls": 714,
+      "calls": 715,
       "input": "8.4M",
-      "output": "162.0K",
+      "output": "162.2K",
       "cacheRead": "29.5M",
       "totalTokens": "38.1M",
-      "cost": 22.16,
-      "inputRaw": 8415219,
-      "outputRaw": 162046,
-      "cacheReadRaw": 29519104,
-      "totalTokensRaw": 38096369
+      "cost": 22.18,
+      "inputRaw": 8422648,
+      "outputRaw": 162220,
+      "cacheReadRaw": 29520640,
+      "totalTokensRaw": 38105508
     },
     {
       "model": "Grok 4 Fast",
@@ -2986,29 +3031,29 @@
     },
     {
       "model": "GPT-5.3 Codex",
-      "calls": 281,
+      "calls": 282,
       "input": "6.8M",
-      "output": "62.7K",
+      "output": "62.9K",
       "cacheRead": "13.0M",
       "totalTokens": "19.9M",
-      "cost": 15.04,
-      "inputRaw": 6788966,
-      "outputRaw": 62720,
-      "cacheReadRaw": 13023872,
-      "totalTokensRaw": 19875558
+      "cost": 15.05,
+      "inputRaw": 6796395,
+      "outputRaw": 62894,
+      "cacheReadRaw": 13025408,
+      "totalTokensRaw": 19884697
     },
     {
       "model": "Claude Opus 4.6",
-      "calls": 112,
-      "input": "140",
-      "output": "28.6K",
-      "cacheRead": "3.5M",
-      "totalTokens": "4.1M",
-      "cost": 5.64,
-      "inputRaw": 140,
-      "outputRaw": 28561,
-      "cacheReadRaw": 3537463,
-      "totalTokensRaw": 4070736
+      "calls": 127,
+      "input": "167",
+      "output": "30.4K",
+      "cacheRead": "3.7M",
+      "totalTokens": "4.3M",
+      "cost": 5.95,
+      "inputRaw": 167,
+      "outputRaw": 30397,
+      "cacheReadRaw": 3686772,
+      "totalTokensRaw": 4252955
     },
     {
       "model": "MiniMax M2.5",
@@ -3040,16 +3085,16 @@
   "subagentUsage7d": [
     {
       "model": "Claude Opus 4.6",
-      "calls": 3514,
+      "calls": 3529,
       "input": "4.8K",
-      "output": "949.1K",
-      "cacheRead": "269.1M",
-      "totalTokens": "303.4M",
-      "cost": 366.8,
-      "inputRaw": 4758,
-      "outputRaw": 949080,
-      "cacheReadRaw": 269137526,
-      "totalTokensRaw": 303449025
+      "output": "950.9K",
+      "cacheRead": "269.3M",
+      "totalTokens": "303.6M",
+      "cost": 367.12,
+      "inputRaw": 4785,
+      "outputRaw": 950916,
+      "cacheReadRaw": 269286835,
+      "totalTokensRaw": 303631244
     },
     {
       "model": "Claude Sonnet",
@@ -3066,16 +3111,16 @@
     },
     {
       "model": "GPT-5.3 Codex",
-      "calls": 544,
+      "calls": 545,
       "input": "7.9M",
-      "output": "125.6K",
+      "output": "125.8K",
       "cacheRead": "24.9M",
       "totalTokens": "32.9M",
-      "cost": 19.87,
-      "inputRaw": 7861871,
-      "outputRaw": 125648,
-      "cacheReadRaw": 24872704,
-      "totalTokensRaw": 32860223
+      "cost": 19.89,
+      "inputRaw": 7869300,
+      "outputRaw": 125822,
+      "cacheReadRaw": 24874240,
+      "totalTokensRaw": 32869362
     },
     {
       "model": "Grok 4 Fast",
@@ -3185,16 +3230,16 @@
   "subagentUsage30d": [
     {
       "model": "Claude Opus 4.6",
-      "calls": 6042,
-      "input": "8.4K",
+      "calls": 6057,
+      "input": "8.5K",
       "output": "1.6M",
-      "cacheRead": "488.6M",
-      "totalTokens": "543.0M",
-      "cost": 584.9,
-      "inputRaw": 8438,
-      "outputRaw": 1604675,
-      "cacheReadRaw": 488645903,
-      "totalTokensRaw": 542955876
+      "cacheRead": "488.8M",
+      "totalTokens": "543.1M",
+      "cost": 585.21,
+      "inputRaw": 8465,
+      "outputRaw": 1606511,
+      "cacheReadRaw": 488795212,
+      "totalTokensRaw": 543138095
     },
     {
       "model": "Claude Opus 4.5",
@@ -3224,16 +3269,16 @@
     },
     {
       "model": "GPT-5.3 Codex",
-      "calls": 714,
+      "calls": 715,
       "input": "8.4M",
-      "output": "162.0K",
+      "output": "162.2K",
       "cacheRead": "29.5M",
       "totalTokens": "38.1M",
-      "cost": 22.16,
-      "inputRaw": 8415219,
-      "outputRaw": 162046,
-      "cacheReadRaw": 29519104,
-      "totalTokensRaw": 38096369
+      "cost": 22.18,
+      "inputRaw": 8422648,
+      "outputRaw": 162220,
+      "cacheReadRaw": 29520640,
+      "totalTokensRaw": 38105508
     },
     {
       "model": "Grok 4 Fast",
@@ -3889,16 +3934,16 @@
     {
       "date": "2026-02-18",
       "label": "02-18",
-      "total": 104.81,
-      "tokens": 82664645,
-      "calls": 902,
-      "subagentCost": 61.52,
-      "subagentRuns": 26,
+      "total": 110.99,
+      "tokens": 91031296,
+      "calls": 975,
+      "subagentCost": 61.85,
+      "subagentRuns": 31,
       "models": {
-        "Claude Opus 4.6": 22.6442,
+        "Claude Opus 4.6": 22.9589,
         "Claude Opus 4.5": 0,
-        "Claude Sonnet": 64.8228,
-        "GPT-5.3 Codex": 17.2334,
+        "Claude Sonnet": 70.6716,
+        "GPT-5.3 Codex": 17.2491,
         "Grok 4 Fast": 0.0731,
         "Gemini 3 Flash": 0,
         "Other": 0.0384
@@ -4273,36 +4318,36 @@
   ],
   "gitLog": [
     {
+      "hash": "250918d",
+      "message": "work: dashboard runtime config channel rows compact",
+      "ago": "11 minutes ago"
+    },
+    {
       "hash": "72c220c",
       "message": "config: replace grok-4-fast with grok-4-1-fast everywhere (crons + alias)",
-      "ago": "3 minutes ago"
+      "ago": "14 minutes ago"
     },
     {
       "hash": "80e42ac",
       "message": "work: dashboard main agent in sub-agent routing",
-      "ago": "7 minutes ago"
+      "ago": "18 minutes ago"
     },
     {
       "hash": "9f0fdc7",
       "message": "work: dashboard sub-agent routing section",
-      "ago": "11 minutes ago"
+      "ago": "22 minutes ago"
     },
     {
       "hash": "ffbd17a",
       "message": "work: dashboard bindings group names + main agent",
-      "ago": "12 minutes ago"
-    },
-    {
-      "hash": "b891791",
-      "message": "work: dashboard agent table scrollable",
-      "ago": "16 minutes ago"
+      "ago": "23 minutes ago"
     }
   ],
   "alerts": [
     {
       "type": "warning",
       "icon": "\ud83d\udcb0",
-      "message": "High daily cost: $104.81",
+      "message": "High daily cost: $110.99",
       "severity": "high"
     }
   ]
